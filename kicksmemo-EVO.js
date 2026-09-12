@@ -43,3 +43,13 @@ function checkFade() {
 window.addEventListener("scroll", checkFade);
 
 checkFade();
+
+window.addEventListener("load", () => {
+
+    const target = document.getElementById("TOP");
+
+    target.scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
