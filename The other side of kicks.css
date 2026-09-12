@@ -8,8 +8,11 @@
     padding: 0;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background: #111;
 }
 
 body {
