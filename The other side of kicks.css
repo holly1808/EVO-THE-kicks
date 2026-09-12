@@ -295,9 +295,6 @@ nav a:hover::after {
 .game-content {
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
-
     gap: 80px;
 }
 
@@ -311,7 +308,7 @@ nav a:hover::after {
   border-spacing: 0;
   border-collapse: collapse;
   border: solid 3px #ffffff;
-  min-width: 70%;
+  min-width: 100%;
 }
 .table-game tr {
   background-color: #000000;/*表の本文奇数段*/
@@ -339,9 +336,6 @@ nav a:hover::after {
 
 .music-content {
     display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
 
     gap: 80px;
 }
