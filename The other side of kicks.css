@@ -372,6 +372,41 @@ nav a:hover::after {
 }
 /*表の見た目 music ここまで*/
 
+
+
+
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    padding: 40px 8%;
+
+    background: #111;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-logo {
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+footer p {
+    color: #888;
+
+    font-size: 12px;
+}
+
 /* =========================
    スマートフォン用設定
 ========================= */
