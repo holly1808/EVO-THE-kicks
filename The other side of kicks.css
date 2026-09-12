@@ -16,6 +16,12 @@ html, body {
     padding: 0;
 }
 
+main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family:
         Arial,
@@ -23,7 +29,7 @@ body {
         sans-serif;
 
     color: #000000;
-    background: #f5f5f5;
+    background: #ffffff;
     line-height: 1.8;
 }
 
@@ -125,8 +131,11 @@ nav a:hover::after {
 ========================= */
 
 .toppage {
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
 
     background:#111;
     color:white;
@@ -194,11 +203,14 @@ nav a:hover::after {
 ========================= */
 
 .section {
-    max-width: 100%;
+    width: 100%;
+    max-width: none;
 
     margin: auto;
 
     padding: 150px 8%;
+
+    box-sizing: border-box;
 }
 
 .section-number {
@@ -344,7 +356,7 @@ nav a:hover::after {
   border-spacing: 0;
   border-collapse: collapse;
   border: solid 3px #000000;
-  width: 125%;
+  width: 100%;
 }
 .table-music tr {
   background-color: #ffffff;/*表の本文奇数段*/
@@ -410,11 +422,11 @@ nav a:hover::after {
     }
 
 
-    .top {
+    .toppage {
         padding: 0 8%;
     }
 
-    .top h1 {
+    .toppage h1 {
         font-size: 65px;
 
         letter-spacing: -3px;
