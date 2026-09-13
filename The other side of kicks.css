@@ -127,6 +127,55 @@ nav a:hover::after {
 }
 
 /* =========================
+   ボタン設定
+========================= */
+
+.comment {
+    display: none;
+}
+
+.botan-open-B{/*ボタンの見た目 黒　表示＆非表示*/
+  height: 40px;
+  width: 150px;
+  color: #ffffff;
+  background-color:#333333;
+  border: 1px solid #ffffff;
+  border-radius:10px;
+}
+.botan-open-B:hover{/*ボタンの見た目　押してる時　黒　表示＆非表示*/
+  background-color:#888888
+}
+
+.botan-close-B{/*ボタンの見た目　黒　非表示*/
+  height: 20px;
+  width: 150px;
+  color: #ffffff;
+  background-color:#333333;
+  border: 1px solid #ffffff;
+  border-radius:10px;
+}
+
+.botan-close-B:hover{/*ボタンの見た目　押してる時　黒　非表示*/
+  background-color:#888888
+}
+
+/* =========================
+   文字カラー設定
+========================= */
+
+.text-blue{
+    color: #00aeff;
+}
+
+.text-red{
+    color: #ff0000;
+}
+
+.text-inVisible{ 
+    color: rgba(0, 0, 0, 0.2);/*文字の濃さ変えるやつ*/
+    }
+
+/* =========================
    section TOPPAGE
 ========================= */
 
@@ -234,6 +283,21 @@ nav a:hover::after {
 }
 
 /* =========================
+    section DARK
+========================= */
+
+.dark {
+    max-width: none;
+
+    background: #111;
+
+    color: rgb(220, 220, 220);
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* =========================
    section MYSELF
 ========================= */
 
@@ -281,17 +345,6 @@ nav a:hover::after {
    section GAME
 ========================= */
 
-.dark {
-    max-width: none;
-
-    background: #111;
-
-    color: rgb(220, 220, 220);
-
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 .game-content {
     display: grid;
 
@@ -317,8 +370,8 @@ nav a:hover::after {
   background-color: #000000;/*表の本文偶数段*/
 }
 .table-game th {
-  background: var(--theme-color);/*表の見出し*/
-  color: #ffffff;
+  background: #333333;/*表の見出し*/
+  color: #cccccc;
 }
 .table-game th, .table-game td {
   border: solid 1px #ffffff; /*表の枠*/
@@ -359,7 +412,7 @@ nav a:hover::after {
   background-color: #ffffff;/*表の本文偶数段*/
 }
 .table-music th {
-  background: var(--theme-color);/*表の見出し*/
+  background: #dddddd;/*表の見出し*/
   color: #000000;
 }
 .table-music th, .table-music td {
@@ -372,8 +425,63 @@ nav a:hover::after {
 }
 /*表の見た目 music ここまで*/
 
+/* =========================
+   section made
+========================= */
 
+.made-content {
+    display: grid;
 
+    gap: 80px;
+}
+
+.made-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+.table-made {/*表の見た目 made ここから*/
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 3px #ffffff;
+  min-width: 100%;
+}
+.table-made tr {
+  background-color: #000000;/*表の本文奇数段*/
+}
+.table-made tr:nth-child(2n) {
+  background-color: #000000;/*表の本文偶数段*/
+}
+.table-made th {
+  background: #333333;/*表の見出し*/
+  color: #cccccc;
+}
+.table-made th, .table-made td {
+  border: solid 1px #ffffff; /*表の枠*/
+  padding: 0.5rem;
+}
+
+.table-made tr:hover {
+  background-color: #353535;/*表の行にマウスを乗せたとき*/
+}
+/*表の見た目 made ここまで*/
+
+/* =========================
+   section Running
+========================= */
+
+.running-content {
+    display: grid;
+
+    gap: 80px;
+}
+
+.running-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
 
 
 

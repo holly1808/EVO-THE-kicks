@@ -53,3 +53,17 @@ window.addEventListener("load", () => {
     });
 
 });
+
+/* ==========================
+   ボタン設定
+========================= */
+
+ function toggleText(id) {
+  const text = document.getElementById(id);
+ 
+   if (text.style.display === "none" || text.style.display === "") {
+     text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+ }
