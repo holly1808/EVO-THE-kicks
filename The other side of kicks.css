@@ -79,12 +79,12 @@ header {
 
 nav {
     display: flex;
-    gap: 35px;
+    gap: 30px;
 }
 
 nav a {
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 
     position: relative;
 }
@@ -95,14 +95,14 @@ nav a::after {
     position: absolute;
 
     left: 0;
-    bottom: -5px;
+    bottom: 0.5px;
 
     width: 0;
-    height: 1px;
+    height: 0.5px;
 
     background: white;
 
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 nav a:hover::after {
@@ -121,13 +121,13 @@ nav a:hover::after {
 
     color: white;
 
-    font-size: 28px;
+    font-size: 20px;
 
     cursor: pointer;
 }
 
 /* =========================
-   section TOP
+   section TOPPAGE
 ========================= */
 
 .toppage {
@@ -513,4 +513,85 @@ footer p {
     opacity: 1;
 
     transform: translateY(0);
+}
+
+/* =========================
+   スマートフォン横画面対応
+========================= */
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+    /* ヘッダーを少し小さくする */
+    header {
+        height: 55px;
+        padding: 0 4%;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+
+    /* メニューの位置を調整 */
+    nav {
+        top: 55px;
+        max-height: calc(100vh - 55px);
+
+        overflow-y: auto;
+    }
+
+    nav a {
+        padding: 12px 4%;
+        font-size: 12px;
+    }
+
+
+    /* ハンバーガーボタン */
+    #menuButton {
+        font-size: 24px;
+    }
+
+
+    /* トップ画面 */
+    .toppage {
+        min-height: 100svh;
+        height: auto;
+
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+
+    /* タイトルを小さくする */
+    .toppage h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    .small-title {
+        margin-bottom: 10px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+
+    /* SCROLL表示 */
+    .scroll {
+        bottom: 15px;
+    }
+
+
+    /* セクションの余白を減らす */
+    .section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+
+    /* WORKS */
+    .card {
+        min-height: 250px;
+    }
 }
