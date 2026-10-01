@@ -159,6 +159,54 @@ nav a:hover::after {
   background-color:#888888
 }
 
+.botan-open-W{/*ボタンの見た目 白　表示＆非表示*/
+  height: 40px;
+  width: 150px;
+  color: #000000;
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:10px;
+}
+.botan-open-W:hover{/*ボタンの見た目　押してる時　白　表示＆非表示*/
+  background-color:#cccccc
+}
+
+.botan-close-W{/*ボタンの見た目 白　非表示*/
+  height: 20px;
+  width: 150px;
+  color: #000000;
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:10px;
+}
+.botan-close-W:hover{/*ボタンの見た目　押してる時　白　非表示*/
+  background-color:#cccccc
+}
+
+.botan-other{/*ボタンの見た目 その他　表示＆非表示*/
+  height: 30px;
+  width: 150px;
+  color: #000000;
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:10px;
+}
+.botan-other:hover{/*ボタンの見た目　押してる時　その他　表示＆非表示*/
+  background-color:#cccccc
+}
+
+.botan-other-close{/*ボタンの見た目 その他　非表示*/
+  height: 20px;
+  width: 150px;
+  color: #000000;
+  background-color:#ffffff;
+  border: 1px solid #000000;
+  border-radius:1px;
+}
+.botan-other-close:hover{/*ボタンの見た目　押してる時　その他　非表示*/
+  background-color:#cccccc
+}
+
 /* =========================
    文字カラー設定
 ========================= */
@@ -172,7 +220,7 @@ nav a:hover::after {
 }
 
 .text-inVisible{ 
-    color: rgba(0, 0, 0, 0.2);/*文字の濃さ変えるやつ*/
+    color: rgba(0, 0, 0, 0.1);/*文字の濃さ変えるやつ*/
     }
 
 /* =========================
@@ -483,7 +531,61 @@ nav a:hover::after {
     margin-bottom: 25px;
 }
 
+/* =========================
+   section Review
+========================= */
 
+.review-content {
+    display: grid;
+
+    gap: 80px;
+}
+
+.review-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+/* =========================
+   section other
+========================= */
+
+.other-content {
+    display: grid;
+}
+
+.other-content h3 {
+    font-size: 25px;
+    margin-top :20px; ;
+    margin-bottom: 10px;
+}
+
+.table-other {/*表の見た目 other ここから*/
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: solid 3px #000000;
+  width: 100%;
+}
+.table-other tr {
+  background-color: #ffffff;/*表の本文奇数段*/
+}
+.table-other tr:nth-child(2n) {
+  background-color: #ffffff;/*表の本文偶数段*/
+}
+.table-other th {
+  background: #dddddd;/*表の見出し*/
+  color: #000000;
+}
+.table-other th, .table-other td {
+  border: solid 1px #000000; /*表の枠*/
+  padding: 0.5rem;
+}
+
+.table-other tr:hover {
+  background-color: #b9b9b9;/*表の行にマウスを乗せたとき*/
+}
+/*表の見た目 other ここまで*/
 
 /* =========================
    フッター
